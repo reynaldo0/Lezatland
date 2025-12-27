@@ -69,7 +69,7 @@ export function Beranda({ onNavigate }: BerandaProps) {
             {/* =====================
           HERO SECTION
       ====================== */}
-            <section className="relative h-150 bg-neutral-900 overflow-hidden">
+            <section className="relative h-screnn md:h-150 py-24 md:py-0 bg-neutral-900 overflow-hidden">
 
                 <motion.img
                     initial={{ scale: 1.2 }}
