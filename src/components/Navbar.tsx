@@ -92,7 +92,7 @@ export function Navbar({ currentPage, onNavigate }: NavbarProps) {
                     onClick={() => handleNavigate('beranda')}
                     className="flex items-center gap-3 group"
                 >
-                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center shadow-md overflow-hidden">
+                    <div className="w-10 h-10 rounded-xl bg-linear-to-br from-primary to-primary/80 flex items-center justify-center shadow-md overflow-hidden">
                         <img
                             src="/logo.png" 
                             alt="Lezatland Restaurant Logo"

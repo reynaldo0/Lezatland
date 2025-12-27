@@ -11,7 +11,7 @@ interface InstagramPost {
 }
 
 export function InstagramFeed() {
-    const [posts, setPosts] = useState<InstagramPost[]>([]);
+    const [posts] = useState<InstagramPost[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
 
