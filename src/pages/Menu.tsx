@@ -52,7 +52,7 @@ export function Menu() {
                             placeholder="Cari menu..."
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
-                            className="w-full pl-12 pr-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                            className="w-full pl-12 pr-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                         />
                     </div>
                 </div>
@@ -65,8 +65,8 @@ export function Menu() {
                                 key={category.value}
                                 onClick={() => setSelectedCategory(category.value)}
                                 className={`px-6 py-2 rounded-full transition-all ${selectedCategory === category.value
-                                        ? 'bg-orange-600 text-white shadow-lg'
-                                        : 'bg-white text-neutral-700 hover:bg-orange-50 border border-neutral-200'
+                                        ? 'bg-primary text-white shadow-lg'
+                                        : 'bg-white text-neutral-700 hover:bg-primary border border-neutral-200'
                                     }`}
                             >
                                 {category.label}
@@ -89,7 +89,7 @@ export function Menu() {
                 )}
 
                 {/* Info Box */}
-                <div className="mt-16 bg-linear-to-r from-orange-50 to-red-50 rounded-xl p-8 text-center border border-orange-200">
+                <div className="mt-16 bg-linear-to-r from-primary/40 to-primary/30 rounded-xl p-8 text-center border border-primary">
                     <h3 className="text-2xl text-neutral-900 mb-4">Pesan Sekarang!</h3>
                     <p className="text-neutral-700 mb-6">
                         Tersedia layanan Dine-in, Takeaway, dan Delivery
@@ -105,7 +105,7 @@ export function Menu() {
                         </a>
                         <a
                             href="tel:+6281234567890"
-                            className="px-8 py-3 bg-orange-600 hover:bg-orange-700 text-white rounded-lg transition-colors"
+                            className="px-8 py-3 bg-primary hover:bg-primary text-white rounded-lg transition-colors"
                         >
                             Telepon Sekarang
                         </a>
@@ -139,7 +139,7 @@ function MenuCard({
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                 />
                 {item.popular && (
-                    <div className="absolute top-3 right-3 bg-orange-600 text-white px-3 py-1 rounded-full flex items-center gap-1 shadow-lg">
+                    <div className="absolute top-3 right-3 bg-primary text-white px-3 py-1 rounded-full flex items-center gap-1 shadow-lg">
                         <Star className="w-4 h-4 fill-current" />
                         <span className="text-sm">Popular</span>
                     </div>
@@ -149,7 +149,7 @@ function MenuCard({
                 <h3 className="text-xl text-neutral-900 mb-2">{item.name}</h3>
                 <p className="text-neutral-600 text-sm mb-4">{item.description}</p>
                 <div className="flex items-center justify-between">
-                    <span className="text-orange-600">{formatPrice(item.price)}</span>
+                    <span className="text-primary">{formatPrice(item.price)}</span>
                     <span className="text-xs px-3 py-1 bg-neutral-100 text-neutral-700 rounded-full">
                         {categoryLabels[item.category]}
                     </span>

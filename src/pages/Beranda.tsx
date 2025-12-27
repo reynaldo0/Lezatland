@@ -70,7 +70,7 @@ export function Beranda({ onNavigate }: BerandaProps) {
           HERO SECTION
       ====================== */}
             <section className="relative h-150 bg-neutral-900 overflow-hidden">
-                
+
                 <motion.img
                     initial={{ scale: 1.2 }}
                     animate={{ scale: 1 }}
@@ -79,7 +79,8 @@ export function Beranda({ onNavigate }: BerandaProps) {
                     className="absolute inset-0 w-full h-full object-cover opacity-60"
                     alt="LEZATLAND"
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-neutral-900 via-neutral-900/50 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-b from-neutral-900 via-neutral-900/50 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-neutral-900/50 via-neutral-900/20 to-transparent" />
 
                 <div className="relative h-full max-w-7xl mx-auto px-6 flex items-center">
                     <motion.div
@@ -187,6 +188,10 @@ export function Beranda({ onNavigate }: BerandaProps) {
           FEATURES
       ====================== */}
             <section className="py-16 bg-white">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl text-neutral-900 mb-4">Layanan Kami</h2>
+                    <p className="text-neutral-600">Berbagai pilihan untuk kenyamanan Anda</p>
+                </div>
                 <motion.div
                     variants={stagger}
                     initial="hidden"
@@ -194,6 +199,7 @@ export function Beranda({ onNavigate }: BerandaProps) {
                     viewport={{ once: true }}
                     className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 px-6"
                 >
+
                     {features.map((f, i) => (
                         <motion.div
                             key={i}
@@ -218,6 +224,11 @@ export function Beranda({ onNavigate }: BerandaProps) {
           HIGHLIGHTS
       ====================== */}
             <section className="py-16 bg-linear-to-br from-primary/20 to-white">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl text-neutral-900 mb-4">Mengapa Memilih LEZATLAND?</h2>
+                    <p className="text-neutral-600">Pengalaman kuliner terbaik untuk keluarga Indonesia</p>
+                </div>
+
                 <motion.div
                     variants={stagger}
                     initial="hidden"
