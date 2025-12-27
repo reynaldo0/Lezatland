@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Instagram, ExternalLink, Loader2, AlertCircle } from 'lucide-react';
+import { ExternalLink, Instagram, Loader2 } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 interface InstagramPost {
     id: string;
@@ -191,7 +191,7 @@ function InstagramEmbedFallback() {
             </div>
 
             {/* Setup Instructions */}
-            <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
+            {/* <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
                 <div className="flex items-start gap-3">
                     <AlertCircle className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" />
                     <div className="flex-1 text-sm">
@@ -211,7 +211,7 @@ function InstagramEmbedFallback() {
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
