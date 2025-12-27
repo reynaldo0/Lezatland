@@ -56,7 +56,7 @@ export function Lokasi() {
             label: 'Petunjuk Arah',
             value: 'Google Maps',
             action: handleDirections,
-            color: 'bg-orange-600 hover:bg-orange-700'
+            color: 'bg-primary hover:bg-primary/80'
         }
     ];
 
@@ -84,7 +84,7 @@ export function Lokasi() {
                                 title="LEZATLAND Location"
                             />
                         </div>
-                        <div className="p-6 bg-linear-to-r from-orange-600 to-red-600 text-white">
+                        <div className="p-6 bg-linear-to-r from-primary to-primary/70 text-white">
                             <div className="flex items-start gap-3 mb-4">
                                 <MapPin className="w-6 h-6 shrink-0 mt-1" />
                                 <div>
@@ -94,7 +94,7 @@ export function Lokasi() {
                             </div>
                             <button
                                 onClick={handleDirections}
-                                className="w-full sm:w-auto px-6 py-3 bg-white text-orange-600 rounded-lg hover:bg-neutral-100 transition-colors inline-flex items-center justify-center gap-2"
+                                className="w-full sm:w-auto px-6 py-3 bg-white text-primary rounded-lg hover:bg-neutral-100 transition-colors inline-flex items-center justify-center gap-2"
                             >
                                 <Navigation className="w-5 h-5" />
                                 Dapatkan Petunjuk Arah
@@ -127,8 +127,8 @@ export function Lokasi() {
                     {/* Operating Hours */}
                     <div className="bg-white rounded-xl p-8 shadow-lg">
                         <div className="flex items-center gap-3 mb-6">
-                            <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
-                                <Clock className="w-6 h-6 text-orange-600" />
+                            <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
+                                <Clock className="w-6 h-6 text-primary" />
                             </div>
                             <h2 className="text-2xl text-neutral-900">Jam Operasional</h2>
                         </div>
@@ -151,7 +151,7 @@ export function Lokasi() {
                             {services.map((service, index) => (
                                 <div
                                     key={index}
-                                    className="flex items-start gap-4 p-4 bg-neutral-50 rounded-lg hover:bg-orange-50 transition-colors"
+                                    className="flex items-start gap-4 p-4 bg-neutral-50 rounded-lg hover:bg-primary transition-colors"
                                 >
                                     <div className="text-3xl">{service.icon}</div>
                                     <div>
@@ -165,22 +165,22 @@ export function Lokasi() {
                 </div>
 
                 {/* Quick Contact Section */}
-                <div className="bg-linear-to-br from-orange-600 to-red-600 rounded-xl p-8 md:p-12 text-center text-white">
-                    <h2 className="text-3xl mb-4">Siap untuk Memesan?</h2>
-                    <p className="text-xl mb-8 text-white/90">
+                <div className="bg-linear-to-br from-primary to-primary/70 rounded-xl p-8 md:p-12 text-center text-black">
+                    <h2 className="text-3xl mb-4 font-bold">Siap untuk Memesan?</h2>
+                    <p className="text-xl mb-8 text-black/90">
                         Hubungi kami sekarang untuk reservasi atau pemesanan
                     </p>
                     <div className="flex flex-wrap gap-4 justify-center">
                         <button
                             onClick={handleWhatsApp}
-                            className="px-8 py-4 bg-white text-orange-600 rounded-lg hover:bg-neutral-100 transition-colors inline-flex items-center gap-2 shadow-lg"
+                            className="px-8 py-4 bg-white text-primary rounded-lg hover:bg-neutral-100 transition-colors inline-flex items-center gap-2 shadow-lg"
                         >
                             <MessageCircle className="w-5 h-5" />
                             Chat WhatsApp
                         </button>
                         <button
                             onClick={handleCall}
-                            className="px-8 py-4 bg-white/10 backdrop-blur-md hover:bg-white/20 text-white rounded-lg border border-white/20 transition-colors inline-flex items-center gap-2"
+                            className="px-8 py-4 bg-white/10 backdrop-blur-md hover:bg-white/20 text-black rounded-lg border border-white/20 transition-colors inline-flex items-center gap-2"
                         >
                             <Phone className="w-5 h-5" />
                             Telepon Sekarang

@@ -100,10 +100,10 @@ export function Tentang() {
                 </div>
 
                 {/* Operating Hours */}
-                <div className="mb-16 bg-linear-to-br from-orange-50 to-red-50 rounded-xl p-8 border border-orange-200">
+                <div className="mb-16 bg-linear-to-br from-primary/40 to-primary/30 rounded-xl p-8 border border-primary">
                     <div className="max-w-2xl mx-auto">
                         <div className="flex items-center gap-3 mb-6 justify-center">
-                            <Clock className="w-8 h-8 text-orange-600" />
+                            <Clock className="w-8 h-8 text-primary" />
                             <h2 className="text-2xl text-neutral-900">Jam Operasional</h2>
                         </div>
                         <div className="text-center">
@@ -130,8 +130,8 @@ export function Tentang() {
                                 transition={{ delay: index * 0.1 }}
                                 className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow text-center"
                             >
-                                <div className="inline-flex items-center justify-center w-14 h-14 bg-orange-100 rounded-full mb-4">
-                                    <feature.icon className="w-7 h-7 text-orange-600" />
+                                <div className="inline-flex items-center justify-center w-14 h-14 bg-primary/20 rounded-full mb-4">
+                                    <feature.icon className="w-7 h-7 text-primary" />
                                 </div>
                                 <h3 className="text-xl text-neutral-900 mb-2">{feature.title}</h3>
                                 <p className="text-neutral-600">{feature.description}</p>
@@ -156,7 +156,7 @@ export function Tentang() {
                                 className="bg-white p-6 rounded-xl shadow-lg"
                             >
                                 <div className="flex items-center gap-3 mb-3">
-                                    <div className="w-12 h-12 bg-linear-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center text-white">
+                                    <div className="w-12 h-12 bg-linear-to-br from-primary to-primary/70 rounded-full flex items-center justify-center text-white">
                                         {review.name.charAt(0)}
                                     </div>
                                     <div className="flex-1">

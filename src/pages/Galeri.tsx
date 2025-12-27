@@ -27,9 +27,9 @@ export function Galeri() {
                 </div>
 
                 {/* CTA Section */}
-                <div className="mt-16 bg-linear-to-r from-orange-600 to-red-600 rounded-xl p-8 md:p-12 text-center text-white">
-                    <h2 className="text-3xl mb-4">Tag Kami di Foto Anda!</h2>
-                    <p className="text-xl mb-6 text-white/90">
+                <div className="mt-16 bg-linear-to-r from-primary to-primary rounded-xl p-8 md:p-12 text-center text-white">
+                    <h2 className="text-3xl mb-4 text-black font-bold">Tag Kami di Foto Anda!</h2>
+                    <p className="text-xl mb-6 text-black/90">
                         Bagikan pengalaman kuliner Anda dengan tag <strong>@lezatland_official</strong> dan <strong>#LEZATLAND</strong>
                     </p>
                     <div className="flex flex-wrap gap-4 justify-center">
@@ -37,7 +37,7 @@ export function Galeri() {
                             href="https://www.instagram.com/lezatland_official/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-8 py-3 bg-white text-orange-600 rounded-lg hover:bg-neutral-100 transition-colors inline-flex items-center gap-2"
+                            className="px-8 py-3 bg-white text-primary rounded-lg hover:bg-neutral-100 transition-colors inline-flex items-center gap-2"
                         >
                             <Instagram className="w-5 h-5" />
                             Follow Instagram
@@ -46,7 +46,7 @@ export function Galeri() {
                             href="https://wa.me/6281234567890?text=Halo%20LEZATLAND,%20saya%20ingin%20bertanya"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-8 py-3 bg-white/10 backdrop-blur-md hover:bg-white/20 text-white rounded-lg border border-white/20 transition-colors"
+                            className="px-8 py-3 bg-white/30 backdrop-blur-md hover:bg-white/40 text-black rounded-lg border border-white/50 transition-colors"
                         >
                             Hubungi Kami
                         </a>

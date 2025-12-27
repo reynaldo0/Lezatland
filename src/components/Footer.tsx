@@ -93,7 +93,7 @@ export function Footer({ onNavigate }: FooterProps) {
                 </div>
 
                 <div className="border-t border-neutral-800 mt-8 pt-8 text-center text-sm text-neutral-500">
-                    <p>&copy; 2025 LEZATLAND Restaurant. All rights reserved.</p>
+                    <p>&copy; 2025 Di buat oleh REYNALDO YUSELLINO. All rights reserved.</p>
                 </div>
             </div>
         </footer>
