@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Footer } from './components/Footer';
 import { Navbar } from './components/Navbar';
 import { WhatsAppFloat } from './components/WhatsAppFloat';
@@ -11,24 +11,36 @@ import { Tentang } from './pages/Tentang';
 type Page = 'beranda' | 'menu' | 'galeri' | 'tentang' | 'lokasi';
 
 export default function App() {
-  const [currentPage, setCurrentPage] = useState<Page>('beranda');
+  const [currentPage, setCurrentPage] = useState<Page>('beranda')
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [currentPage])
+
+  useEffect(() => {
+    const id = setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }, 50)
+    return () => clearTimeout(id)
+  }, [currentPage])
+
 
   const renderPage = () => {
     switch (currentPage) {
       case 'beranda':
-        return <Beranda onNavigate={setCurrentPage} />;
+        return <Beranda onNavigate={setCurrentPage} />
       case 'menu':
-        return <Menu />;
+        return <Menu />
       case 'galeri':
-        return <Galeri />;
+        return <Galeri />
       case 'tentang':
-        return <Tentang />;
+        return <Tentang />
       case 'lokasi':
-        return <Lokasi />;
+        return <Lokasi />
       default:
-        return <Beranda onNavigate={setCurrentPage} />;
+        return <Beranda onNavigate={setCurrentPage} />
     }
-  };
+  }
 
   return (
     <div className="min-h-screen flex flex-col bg-neutral-50">
@@ -39,5 +51,5 @@ export default function App() {
       <Footer onNavigate={setCurrentPage} />
       <WhatsAppFloat />
     </div>
-  );
+  )
 }

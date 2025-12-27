@@ -152,34 +152,60 @@ export function Beranda({ onNavigate }: BerandaProps) {
 
                         {/* CTA */}
                         <div className="flex flex-wrap gap-4">
+                            {/* Lihat Menu */}
                             <motion.button
                                 whileHover={{ scale: 1.06 }}
                                 whileTap={{ scale: 0.95 }}
+                                onClick={() => onNavigate('menu')}
                                 className="
-    px-8 py-3 
-    bg-primary 
-    text-neutral-900 
-    font-semibold 
-    rounded-xl 
-    shadow-md
-    hover:shadow-lg
-    transition-all
-  "
+      px-8 py-3 
+      bg-primary hover:bg-primary/80
+      text-white 
+      rounded-lg 
+      font-semibold
+      transition-colors
+    "
                             >
                                 Lihat Menu
                             </motion.button>
 
+                            {/* Lihat Lokasi */}
+                            <motion.button
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                onClick={() => onNavigate('lokasi')}
+                                className="
+      px-8 py-3
+      bg-white/10 backdrop-blur-md
+      hover:bg-white/20
+      text-white
+      rounded-lg
+      border border-white/20
+      transition-colors
+    "
+                            >
+                                Lihat Lokasi
+                            </motion.button>
 
+                            {/* WhatsApp */}
                             <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                                 onClick={handleWhatsApp}
-                                className="px-8 py-3 bg-green-600 text-white rounded-lg flex items-center gap-2"
+                                className="
+      px-8 py-3 
+      bg-green-600 hover:bg-green-700
+      text-white 
+      rounded-lg
+      transition-colors
+      flex items-center gap-2
+    "
                             >
                                 <Phone className="w-5 h-5" />
                                 WhatsApp
                             </motion.button>
                         </div>
+
                     </motion.div>
                 </div>
             </section>
